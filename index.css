@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
 
+    height: 285px;
     width: 550px;
 
     background-color: #6943FF;
@@ -24,11 +25,6 @@ body {
     margin: 50px auto;
     margin-bottom: 0px;
 }
-
-#title-text {
-    font-weight: 800;
-}
-
 
 #quantity {
     height: 83px;
@@ -58,46 +54,63 @@ body {
     border-radius: 5px;
     border: none;
 
-    font-size: 18px;
-    font-weight: 500;
+    background-color: #fff; /* Button background color */
+    color: #6943FF; /* Button text color */
 
+    font-size: 16px;
+    font-weight: bold; /* Added font-weight for button text */
+
+    cursor: pointer; /* Added cursor for pointer on hover */
+
+    transition: background-color 0.3s, color 0.3s; /* Added transition for smooth color change */
 }
 
-.bottom-container{
+#convert-btn:hover {
+    background-color: #d2d0d6; 
+}
+
+#title-text {
+    font-weight: 800;
+}
+
+.bottom-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    background-color:#1F2937;
-    
     width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    background-color: #1F2937;
 
-    padding: 30px;
-    margin: 0 auto;
-
-    color: #FFFFFF;
 }
-
 
 .convert-container {
     width: 500px;
+    min-height: 108.57px;
+    
+    background-color: #273549;
 
-    margin-top: 25px;
+    padding-top: 25px;
 
-    padding: 20px;
+    margin: 20px;
 
     text-align: center;
-    background-color: #273549;
 }
 
-.font-everything{
-    color: #CCC1FF;
-
-    font-size: 22px;
+.font-everything {
     font-weight: 600;
-
-
+    font-size: 20px;
+    color:#CCC1FF;
 }
+
+p {
+    font-weight: 400;
+    font-size: 16px; /* Adjusted font size */
+}
+
+
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
