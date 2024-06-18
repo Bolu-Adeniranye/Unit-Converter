@@ -43,7 +43,9 @@ body {
     font-weight: bold;
 
     outline: none;
-    overflow: hidden
+    overflow: hidden;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
 }
 
 #convert-btn {
